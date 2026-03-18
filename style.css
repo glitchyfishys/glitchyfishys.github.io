@@ -1,0 +1,108 @@
+@font-face {
+  font-family: Typewriter;
+  src: url("MonospaceTypewriter.ttf");
+}
+
+body {
+    font-family: Typewriter, monospace;
+    background-color: black;
+    color: white;
+}
+
+.BinaryBackground {
+    position: fixed;
+    top: 0px;
+    pointer-events: none;
+}
+
+.binary {
+    position: fixed;
+    width: calc(100% + 64px);
+    font-size: 32px;
+    color: lime;
+    text-shadow: white 0px 0px 5px, green 1px 1px 0px;
+    overflow: visible;
+    z-index: -999;
+}
+
+.Wavey {
+    top: 0px;
+    color: red;
+    display: inline-block;
+    
+}
+
+.center {
+    position: relative;
+    width: 75%;
+    margin-left: 12.5%;
+    z-index: 2;
+}
+
+.section {
+    background-color: black;
+    border: white 5px solid;
+    text-align: center;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.subSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5px;
+}
+
+
+.subSectionInfo {
+    width: calc(50% - 4px);
+    font-size: 32px;
+    font-weight: bold;
+    /* text-shadow: blue 1px 1px, red -1px -1px, green -1px 1px, purple 1px -1px; */
+    animation: annimation 5s infinite linear;
+}
+
+
+@keyframes annimation {
+    0% {
+        text-shadow: blue 2px 2px, red -2px -2px, green -2px 2px, purple 2px -2px,   blue 2px 2px, red -2px -2px, green -2px 2px, purple 2px -2px;
+    }
+
+    25% {
+        text-shadow: blue -2px 2px, red 2px -2px, green -2px -2px, purple 2px 2px,   blue 2px -2px, red -2px 2px, green 2px 2px, purple -2px -2px;
+    }
+
+    50% {
+        text-shadow: blue -2px -2px, red 2px 2px, green 2px -2px, purple -2px 2px,   blue -2px -2px, red 2px 2px, green 2px -2px, purple -2px 2px;
+    }
+
+    75% {
+        text-shadow: blue 2px -2px, red -2px 2px, green 2px 2px, purple -2px -2px,   blue -2px 2px, red 2px -2px, green -2px -2px, purple 2px 2px;
+    }
+
+    100% {
+        text-shadow: blue 2px 2px, red -2px -2px, green -2px 2px, purple 2px -2px,   blue 2px 2px, red -2px -2px, green -2px 2px, purple 2px -2px;
+    }
+}
+
+.gameInfo {
+    font-size: 16px;
+    font-weight: initial;
+    text-shadow: initial;
+    transition-duration: 500ms;
+}
+
+.gameInfo:hover {
+    font-size: 18px;
+}
+
+h1 {
+    width: 100%;
+}
+
+a {
+    color: unset;
+    text-decoration: unset;
+}
