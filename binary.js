@@ -7,7 +7,7 @@ let PageHeight = Math.floor(innerHeight / 32);
 
 function Update(){
 
-    Glitchy.innerHTML = wordCycle(["Staller", "Irreplaceable", "Eternal", "Uncontainable", "Near Perfect", "Artificial", "Celestial", "Unbound"]) + " Glitchyfishys";
+    Glitchy.innerHTML = wordCycle(["Staller", "Irreplaceable", "Eternal", "Uncontainable", "Near Perfect", "Fundamental", "Celestial", "Unbound"]) + " Glitchyfishys";
     // GlitchyInfo.innerHTML = wordCycle(["Celestial of Perfection", "Creativity Unbound", "Redefined Master Mind", "Stallar Enhancement"]);
     PGL.innerHTML = wordCycle(["HTML", "Java Script", "CSS", "Vue", "Unity C#", "TMod Loader C#", "Roblox Luau", "Scratch"]);
 
