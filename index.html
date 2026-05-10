@@ -1,28 +1,51 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Glitchyfishys</title>
+        <title>Glitchyfishys' Domain</title>
+        <meta property="og:title" content="Glitchyfishys' Domain">
+        <meta property="og:description" content='Infomation on the one they call "Glitchyfishys"'>
+        <meta property="og:image" content="https://raw.githubusercontent.com/glitchyfishys/glitchyfishys.github.io/main/avatars-voiid.png">
+        <meta property="theme-color" content="#225522">
+        <meta property="viewport" content="width=device-width, initial-scale=0.5">
         <link href="style.css" rel="stylesheet">
 
     </head>
     <body>
-        <div id="BinaryBackground" class="BinaryBackground"></div>
+        <div id="BinaryBackground" class="binaryBackground"></div>
 
+        <div id="configMenu" class="configMenu hidden">
+                Make the page boring... or easyer to read.
+                <br><br>
+                Center Content Width: <input id="mainWidth" class="s1" type="range" value="75" min="20" max="90" oninput="changeConfig()"> <span id="mainWidthValue">75%</span>
+                <br>
+                Background Shifting: <input id="mainBackgroundShifting" type="checkbox" checked="false" onchange="changeConfig()"> <span id="mainBackgroundShiftingValue">off</span>
+                <br>
+                Background Sliding: <input id="mainBackgroundAjusting" type="checkbox" checked="false" onchange="changeConfig()"> <span id="mainBackgroundAjustingValue">off</span>
+                <br>
+                Interchanging Text: <input id="changingText" type="checkbox" checked="false" onchange="changeConfig()"> <span id="changingTextValue">off</span>
+                <br>
+                Wavy Text: <input id="wavyText" type="checkbox" checked="true" onchange="changeConfig()"> <span id="wavyTextValue">on</span>
+                <br>
+                Pulsing Text: <input id="pulsingText" type="checkbox" checked="true" onchange="changeConfig()"> <span id="pulsingTextValue">on</span>
+        </div>
 
-        <div class="center">
+        <div id="center" class="center">
             <div class="section">
                 <div> <!-- title section-->
-                    <noscript> Your lack of java script is heavily limiting my creativity... </noscript>
-                    
+                <div id="configButton" class="config">Cosmetics adapter</div>
+                <image src="./avatars-voiid.png" class="PPI"></image>
+                <noscript> Your lack of java script is heavily limiting my creativity... </noscript>
                     <h1 id="Glitchy">Glitchyfishys</h1>
 
                     I specialise in programing and have Used <span id="PGL"> HTML, Java Script, CSS, Vue, Unity C#, TMod Loader C#, Roblox Luau, and even Scratch </span> before.<br>
 
                     Reality can be anything! <br>
                     Most projects will be open-source <br>
-                    <div>
-                        <span id="NullAI">NO ARTIFICIAL INTELLIGENCE CAN OVERPOWER MY CREATIVITY</span><br>
-                    </div>
+
+                        <span id="NullAI" style="color: red;">NO ARTIFICIAL INTELLIGENCE CAN OVERPOWER MY CREATIVITY</span><br>
+                        <span id="Boundless" style="color: gold;">MY CREATIVITY... IT HAS NO LIMITS... I JUST NEED TIME...</span><br>
+                        <!-- <span id="ArchBound" style="color: green;">I AM THE DIGITAL ARCHITECH</span><br> -->
+
                     <br>
                 </div>
             </div>
@@ -32,7 +55,7 @@
                 <div class="subSection"> <!-- roblox-->
 
                     <div class="subSectionInfo" style="border: purple 2px solid;">
-                        <a href="https://www.roblox.com/games/136700765588986/Expeditious-Anti-Cheat">Expeditious Anti-Cheat</a> 
+                        <a href="https://www.roblox.com/games/136700765588986/Expeditious-Anti-Cheat" target="_blank">Expeditious Anti-Cheat</a> 
                         <div class="gameInfo">
                             A powerful lightweight Anti-Cheat system. <br>
                             The only known way to bypass is to edit memory <br>
@@ -40,7 +63,7 @@
                         </div>
                     </div>
                     <div class="subSectionInfo" style="border: red 2px solid;">
-                        <a href="https://www.roblox.com/games/129191314746960">Life Line</a> 
+                        <a href="https://www.roblox.com/games/129191314746960" target="_blank">Life Line</a> 
                         
                         <div class="gameInfo">
                             The horror game quiz show! <br>
@@ -48,7 +71,7 @@
                         </div>
                     </div>
                     <div class="subSectionInfo" style="border: red 2px solid;">
-                        <a href="https://www.roblox.com/games/87746118401989">Pylon Chat</a> 
+                        <a href="https://www.roblox.com/games/87746118401989" target="_blank">Pylon Chat</a> 
                         
                         <div class="gameInfo">
                             Reworked Roblox chat allowing un-age verified players to communicate with eachother. <br>
@@ -71,27 +94,27 @@
                     <h1>Antimatter Dimensions Modifications</h1>
 
                     <div class="subSectionInfo" style="border: lime 2px solid;">
-                        <a href="https://glitchyfishys.github.io/AD-V/">Vis</a>
+                        <a href="https://glitchyfishys.github.io/AD-V/" target="_blank">Vis</a>
                         <div class="gameInfo">
                             A mod I made when learning Web development. <br>
                             It has many bugs. <br>
                         </div>
                     </div>
                     <div class="subSectionInfo" style="border: #000099 2px solid;">
-                        <a href="https://glitchyfishys.github.io/ADExpeditious/">Expeditious</a>
+                        <a href="https://glitchyfishys.github.io/ADExpeditious/" target="_blank">Expeditious</a>
                         
                         <div class="gameInfo">
                             A powerful tool for speedruners, or just playing with modifiers. <br>
                         </div>
                     </div>
                     <div class="subSectionInfo" style="border: magenta 2px solid;">
-                        <a href="https://glitchyfishys.github.io/AD-Paradox/">Paradox</a>
+                        <a href="https://glitchyfishys.github.io/AD-Paradox/" target="_blank">Paradox</a>
                         <div class="gameInfo">
-                            An NG- Mod that adds alternate prestige layers. <br>
+                            An NG- Mod that adds alternate presteage layers. <br>
                         </div>
                     </div>
                     <div class="subSectionInfo" style="border: orange 2px solid;">
-                        <a href="https://glitchyfishys.github.io/ADCappedAtOne/">Capped At One</a>
+                        <a href="https://glitchyfishys.github.io/ADCappedAtOne/" target="_blank">Capped At One</a>
                         
                         <div class="gameInfo">
                             Antimatter Dimensions but the theme was capped at one. Joke mod. <br>
@@ -106,13 +129,13 @@
                     <h1>HTML JS & CSS</h1>
 
                     <div class="subSectionInfo" style="border: cyan 2px solid;">
-                        <a href="https://glitchyfishys.github.io/simple-game/">Eternea Inftis</a>
+                        <a href="https://glitchyfishys.github.io/simple-game/" target="_blank">Eternea Inftis</a>
                         <div class="gameInfo">
                             A game I made when learning Web development. <br>
                         </div>
                     </div>
                     <div class="subSectionInfo" style="border: red 2px solid;">
-                        <a href="https://glitchyfishys.github.io/InfinityClicker/">Infinity Clicker</a>
+                        <a href="https://glitchyfishys.github.io/InfinityClicker/" target="_blank">Infinity Clicker</a>
                         
                         <div class="gameInfo">
                             A game originating from scratch. <br>
@@ -120,12 +143,26 @@
                         </div>
                     </div>
                     <div class="subSectionInfo" style="border: red 2px solid;">
-                        <a href="https://glitchyfishys.github.io/Moding-Tree-game-or-something/">Moding Tree</a>
+                        <a href="https://glitchyfishys.github.io/Moding-Tree-game-or-something/" target="_blank">The Moding Tree</a>
                         
                         <div class="gameInfo">
                             Something I was playing around with. <br>
                         </div>
                     </div>
+
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="subSection"> <!-- The Compendium-->
+                    <h1>Await the construction of my Digital Architect's Compendium</h1>
+
+                    <div class="gameInfo">
+                        Why reinvent the wheel when you can find it in the Compendium. Some free. Some payed. <br>
+                    </div>
+                    <br>
+                    <br>
+                    
 
                 </div>
             </div>
@@ -137,6 +174,6 @@
     </body>
 
     <script src="Zargo.js"></script>
-    <script src="binary.js"></script>
+    <script src="cosmetics.js"></script>
 
 </html>
