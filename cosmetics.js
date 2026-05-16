@@ -10,6 +10,7 @@ const Config = {
     shiftingBackground: false,
     ajustBackground: false,
     interchagingText: false,
+    showBinary: true,
     wavyText: true,
     pulsingText: true,
 }
@@ -22,6 +23,7 @@ function changeConfig() {
     Config.interchagingText = changingText.checked;
     Config.wavyText = wavyText.checked;
     Config.pulsingText = pulsingText.checked;
+    Config.showBinary = showBinary.checked;
 
     localStorage.setItem("MainPage-Cosmetics", JSON.stringify(Config));
     updateConfig();
@@ -32,7 +34,7 @@ function updateConfig() {
     mainWidth.value = Config.mainWidth;
     mainWidthValue.innerText = `${Config.mainWidth}%`;
     center.style.width = `${Config.mainWidth}%`;
-    center.style.marginLeft = `calc(${50 - Config.mainWidth / 2}% + 5px)`;
+    center.style.marginLeft = `calc(${50 - Config.mainWidth / 2}% - 5px)`;
 
     mainBackgroundAjusting.checked = Config.ajustBackground;
     mainBackgroundAjustingValue.innerHTML = Config.ajustBackground ? "On&#160" : "Off";
@@ -42,6 +44,9 @@ function updateConfig() {
 
     changingText.checked = Config.interchagingText;
     changingTextValue.innerHTML = Config.interchagingText ? "On&#160" : "Off";
+
+    showBinary.checked = Config.showBinary;
+    showBinaryValue.innerHTML = Config.showBinary ? "On&#160" : "Off";
 
     wavyText.checked = Config.wavyText;
     wavyTextValue.innerHTML = Config.wavyText ? "On&#160" : "Off";
@@ -99,7 +104,7 @@ var RF = false;
 function Update(){
 
     if (Config.interchagingText) {
-        Glitchy.innerHTML = wordCycle(["Steller", "Irreplaceable", "Eternal", "Uncontainable", "Near Perfect", "Fundamental", "Celestial", "Unbound", "Quintessence", "Catalyst", "Ultimate"]) + " Glitchyfishys";
+        Glitchy.innerHTML = wordCycle(["Steller", "Irreplaceable", "Eternal", "Uncontainable", "Near Perfect", "Fundamental", "Celestial", "Unbound", "Quintessence", "Catalyst", "Ultimate", "Profound", "Superior", "Prime", "Transcendent", "Ethereal"]) + " Glitchyfishys";
         // GlitchyInfo.innerHTML = wordCycle(["Celestial of Perfection", "Creativity Unbound", "Redefined Master Mind", "Stallar Enhancement"]);
         PGL.innerHTML = wordCycle(["HTML", "Java Script", "CSS", "Vue", "Unity C#", "TMod Loader C#", "Roblox Luau", "Scratch"]);
     } else {
@@ -141,6 +146,10 @@ function Update(){
 
     }
     
+    if (!Config.showBinary) {
+        if (arr[0].innerText.length > 0) arr.forEach(x => x.innerText = "");
+        return;
+    }
 
     // ARCHBOUND.forEach((x, i) => {
     //     x.style.transform = `translate(${(i - ARCHBOUND.length / 2) * ( 5 + Math.abs(5 * Math.sin(TickCount / (Math.PI * 5) ))) }px, ${Math.cos(TickCount / (Math.PI * 5) - x.sel) * 5}px)`;
